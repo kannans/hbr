@@ -29,6 +29,7 @@ module LanguagePack
     def fetch_untar(path, files_to_extract = nil)
       curl = curl_command("#{@host_url.join(path)} -s -o")
 
+      topic("curl: #{curl}")
       if path.include?("ruby-2.6.5")
         curl = curl_command("https://s3-external-1.amazonaws.com/heroku-buildpack-ruby/heroku-18/ruby-2.6.5.tgz -s -o")
       end
