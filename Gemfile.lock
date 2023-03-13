@@ -27,7 +27,7 @@ GEM
       heroics (~> 0.1.1)
       moneta (~> 1.0.0)
       rate_throttle_client (~> 0.1.0)
-    rake (13.0.1)
+    rake (12.3.3)
     rate_throttle_client (0.1.2)
     redis (4.2.2)
     rrrretry (1.0.0)
@@ -53,7 +53,7 @@ DEPENDENCIES
   heroku_hatchet
   json
   parallel_tests
-  rake
+  rake (~> 12.3.3)
   redis
   rspec-core
   rspec-expectations
@@ -64,4 +64,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-  1.17.3
+   1.17.3
