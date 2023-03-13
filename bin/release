@@ -7,6 +7,8 @@ RELEASE_FILE="${BUILD_DIR}/tmp/heroku-buildpack-release-step.yml"
 
 export PATH=$PATH:$HOME/vendor/bin
 
+echo `which rake`
+gem update --system
 # Whilst the release file is always written by the buildpack, some apps use
 # third-party slug cleaner buildpacks to remove this and other files, so we
 # cannot assume it still exists by the time the release step runs.
