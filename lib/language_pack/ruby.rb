@@ -377,9 +377,6 @@ EOF
       set_export_path "GEM_PATH", gem_path, layer
       set_export_default "LANG", "en_US.UTF-8", layer
 
-      #set patch openssl path
-      set_export_default "LD_LIBRARY_PATH", "/app/openssl/lib/"
-
       # TODO handle jruby
       if ruby_version.jruby?
         set_export_default "JRUBY_OPTS", default_jruby_opts
