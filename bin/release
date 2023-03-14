@@ -15,3 +15,5 @@ export LD_LIBRARY_PATH=/app/openssl/lib/
 if [[ -f "${RELEASE_FILE}" ]]; then
   cat "${RELEASE_FILE}"
 fi
+
+ln -s /etc/ssl /app/openssl/ssl
