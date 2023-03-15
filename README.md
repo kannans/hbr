@@ -14,7 +14,7 @@ Example Usage:
     $ ls
     Gemfile Gemfile.lock
 
-    $ heroku create --buildpack heroku/ruby
+    $ heroku create --buildpack https://github.com/kannans/hbr.git
 
     $ git push heroku main
     ...
